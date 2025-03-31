@@ -1,25 +1,65 @@
+@import url(https://db.onlinewebfonts.com/c/863c406a55d3a786081b39c40d50f77c?family=Marker+Aid+W00+Regular);
+
 /*GENERAL*/
-html{
+html {
     scroll-behavior: smooth;
 }
+
 body {
-     font-family:'Lato',sans-serif ;
-     font-weight: bold;
-
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;    
 }
+    
 
-h1,h2,h3,h4,h5,h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: bold;
     color: #9e8f8f;
 
 }
-.backganimate{
+
+.intro {
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    margin: 30px;
+}
+
+.tools h2 {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 2rem;
+    color: #000000;
+    font-weight: bold;
+}
+
+.tools i {
+    display: inline-block;
+    margin: 0 auto;
+    color: #000000;
+    font-size: 50px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    padding: 20px;
+
+}
+
+.tools i span {
+    font-size: 30px;
+    font-family: 'Lato', sans-serif;
+}
+
+.backganimate {
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 img {
-    max-width:100%;
+    max-width: 100%;
     height: auto;
 }
 
@@ -33,6 +73,7 @@ section .heading {
     padding-bottom: 40px;
 
 }
+
 section .heading h2 {
     text-transform: uppercase;
 
@@ -43,22 +84,25 @@ section .heading h2 {
     height: 2px;
     background-color: #000000;
     margin: 0 auto 20px;
-    
+
 }
+
 ul {
     list-style: none;
 
 
 }
+
 /*NAVIGATION*/
 .navbar {
 
-    background-color:#000000;
+    background-color: #000000;
     color: white;
     font-weight: bold;
     text-transform: uppercase;
     border-bottom: 1px solid white;
 }
+
 .navbar-nav {
     margin: 0 auto;
     text-align: center;
@@ -66,47 +110,54 @@ ul {
 
 .nav-link {
 
-    color: white !important; 
+    color: white !important;
     margin: 0 6px;
+    border-radius: 20px;
 
 }
 
 .nav-link:hover {
 
-    background-color: rgb(122, 122, 122);
-    color:rgb(17, 17, 17);
+    background-color: rgb(255, 255, 255);
+    color: rgb(17, 17, 17) !important;
     border-radius: 20px;
+    transition: all 0.3s ease-in 0s;
 }
 
 
 /*ABOUT*/
 
 #about {
-       background-color:#000000 ;
+    background-color: #000000;
 
 }
 
 .profile-picture {
-    text-align:center;
+    text-align: center;
     margin: 0px auto 30px;
 
 }
-#about .heading h1 {
+
+#about .heading h1,
+#about .heading h3 {
     color: white;
     text-transform: uppercase;
     margin-bottom: 20px;
-    
+    font-family: 'Marker Aid W00 Regular';
+    font-style: normal;
+    font-weight: 400;
+
 }
 
 .button1 {
-    color:white;
+    color: white;
     text-transform: uppercase;
-    border:1px solid white;
+    border: 1px solid white;
     padding: 18px 50px;
-    font-weight:bold;
+    font-weight: bold;
     display: inline-block;
     border-radius: 5px;
-    text-decoration:none;
+    text-decoration: none;
     margin-top: 20px;
     transition: all 0.3s ease-in 0s;
 
@@ -156,6 +207,7 @@ ul {
     background-color: white;
 
 }
+
 .timeline {
 
     padding: 30px 10px;
@@ -168,7 +220,7 @@ ul {
     content: " ";
     top: 0;
     bottom: 0;
-    position:  absolute;
+    position: absolute;
     width: 5px;
     background-color: #333;
     left: 50%;
@@ -176,27 +228,28 @@ ul {
 
 }
 
-.timeline > li {
-    
+.timeline>li {
+
     margin-bottom: 20px;
     position: relative;
 
 }
 
-.timeline > li:after {
+.timeline>li:after {
 
     clear: both;
 
 }
 
-.timeline > li:before, .timeline > li:after {
+.timeline>li:before,
+.timeline>li:after {
 
     content: " ";
     display: table;
 }
 
 .timeline li .timeline-badge {
-    
+
     color: #b79e79;
     width: 50px;
     line-height: 50px;
@@ -230,9 +283,9 @@ ul {
     margin-right: 40px;
     border: 1px solid #d4d4d4;
     border-radius: 7px;
-    padding:  20px 25px;
+    padding: 20px 25px;
     position: relative;
-    box-shadow: 0 1px 6px rgba(0,0,0, 0.175);
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
     background-color: #fff;
 
 }
@@ -243,12 +296,12 @@ ul {
     margin-left: 40px;
 
 }
- 
+
 .timeline-heading h4 {
 
-    color:#b79e79
-
+    color: #b79e79
 }
+
 .timeline-heading a {
     color: #b79e79;
 }
@@ -258,6 +311,7 @@ ul {
     color: white;
 
 }
+
 .timeline-body a {
     color: #b79e79;
 }
@@ -267,7 +321,7 @@ ul {
 .education h2 {
 
     color: #000000;
-    
+
 }
 
 .education-block {
@@ -276,7 +330,7 @@ ul {
     margin: 0 auto;
     text-align: center;
     padding: 30px;
-    background: rgb(250,250,250);
+    background: rgb(250, 250, 250);
     border-radius: 5px;
     border: 1px solid #ccc;
     margin-bottom: 20px;
@@ -285,12 +339,12 @@ ul {
 
 .education-block h5 {
 
-    color:#888;
+    color: #888;
     font-size: 15px;
     margin-bottom: 15px;
 }
 
-.education-block span{
+.education-block span {
 
     font-size: 35px;
 }
@@ -304,26 +358,43 @@ ul {
 
     font-weight: lighter;
 }
+
+/*Projects*/
+#projets {
+    background-color: #000000;
+}
+
+#projets .heading h2 {
+    color: white;
+}
+#projets .divider {
+    background-color: white;
+}
+
 /*ANIMATION*/
-#animation{
+#animation {
     background-color: #fff;
 }
-.animate{
+
+.animate {
     background-position: cover;
     border: none;
-    opacity:95%;
+    opacity: 95%;
     margin-bottom: -80px;
 
 
 }
-#animation h2{
+
+#animation h2 {
     color: #000000;
 }
+
+/*CURSOR*/
 
 /*FOOTER*/
 
 footer {
-    
+
     background-color: #000000;
     padding: 20px 0 40px;
     text-align: center;
@@ -332,7 +403,7 @@ footer {
 footer h5 {
 
     color: #e9ecef;
-    text-transform:uppercase ;
+    text-transform: uppercase;
     font-weight: normal;
 
 }
@@ -341,21 +412,13 @@ footer span {
 
     color: white;
     font-size: 25px;
-    
+
 }
 
 footer span:hover {
 
     color: #e9ecef;
-    font-size: 27px ;
+    font-size: 27px;
     text-align: center;
-    
+
 }
-
-
-
-
-
-
- 
-    
